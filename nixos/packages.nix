@@ -6,19 +6,28 @@
 
   environment.systemPackages = with pkgs; [
     # Desktop apps
+    activitywatch
+    adoptopenjdk-icedtea-web
     alacritty
-    obs-studio
-    kdenlive
+    aw-notify
+    aw-qt
+    aw-server-rust
+    aw-watcher-window
     discord
+    distrobox
+    drawio
+    dropbox
     flatpak
     google-chrome
     gparted
+    kdenlive
+    obs-studio
     obsidian
-    zoom-us
-    dropbox
-    drawio
     slack
     vscode
+    zoom-us
+
+
 
     # GNOME
     gnomeExtensions.system-monitor-next
@@ -51,6 +60,7 @@
     git
     go
     htop
+    jdk8
     k9s
     kubectl
     lazydocker
