@@ -13,12 +13,6 @@
     xkb.layout = "us";
     xkb.variant = "";
 
-    libinput = {
-      enable = true;
-      mouse.accelProfile = "flat";
-      touchpad.accelProfile = "flat";
-    };
-
     videoDrivers = [ "nvidia" ];
   };
 }

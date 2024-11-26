@@ -15,8 +15,6 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    polymc.url = "github:PolyMC/PolyMC";
   };
 
   outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
@@ -40,7 +38,7 @@
       ];
     };
 
-    homeConfigurations.amper = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.kmf = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       modules = [ ./home-manager/home.nix ];
     };

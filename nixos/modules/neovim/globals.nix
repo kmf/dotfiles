@@ -1,1 +1,7 @@
-{ mapleader = " "; }
+{
+  programs.nixvim = {
+    globals = {
+      mapleader = " ";
+    };
+  };
+}
