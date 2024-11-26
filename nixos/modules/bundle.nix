@@ -8,7 +8,7 @@
     ./extra.nix
     ./iphone.nix
     ./network.nix
-    ./neovim/nixvim.nix
+    ./nixvim/nixvim.nix
     ./podman.nix
     ./sound.nix
     ./user.nix
