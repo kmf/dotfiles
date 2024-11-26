@@ -1,0 +1,20 @@
+{
+  imports = [
+    ./1password.nix
+    ./bootloader.nix
+    ./cups.nix
+    ./docker.nix
+    ./env.nix
+    ./extra.nix
+    ./iphone.nix
+    ./network.nix
+    ./nixvim/nixvim.nix
+    ./neovim
+    ./podman.nix
+    ./sound.nix
+    ./user.nix
+    ./virtmanager.nix
+    ./virtualbox.nix
+    ./xserver.nix
+  ];
+}
