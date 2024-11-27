@@ -1,6 +1,7 @@
 {
   imports = [
     ./1password.nix
+    ./bluetooth.nix
     ./bootloader.nix
     ./catppuccin.nix
     ./cups.nix

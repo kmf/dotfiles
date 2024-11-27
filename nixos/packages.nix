@@ -114,6 +114,19 @@
     #xclip
     #xorg.xbacklight
 
+  # Pantheon
+  # pantheon-tweaks
+
+  # KDE
+    kdePackages.merkuro
+    kdePackages.qtlocation
+    kdePackages.calendarsupport
+    kdePackages.akonadi-calendar-tools
+    kdePackages.akonadi-calendar
+    kdePackages.kdeconnect-kde
+    deepin.deepin-icon-theme
+
+
 
     # Sound
     pipewire

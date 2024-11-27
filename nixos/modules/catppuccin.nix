@@ -1,4 +1,4 @@
 {
   catppuccin.enable = true;
-  catppuccin.flavor = "mocha";
+  catppuccin.flavor = "macchiato";
 }
