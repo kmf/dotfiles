@@ -2,6 +2,7 @@
   imports = [
     ./1password.nix
     ./bootloader.nix
+    ./catppuccin.nix
     ./cups.nix
     ./docker.nix
     ./env.nix

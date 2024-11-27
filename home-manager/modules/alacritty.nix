@@ -5,15 +5,13 @@
       window.opacity = 0.95;
 
       font = {
-        size = 13.0;
+        size = 16.0;
         # draw_bold_text_with_bright_colors = true;
         normal = {
-          family = "JetBrains Mono";
+          family = "CodeNewRoman Nerd Font Mono";
           style = "Bold";
         };
       };
-
-      colors.primary.background = "#1d2021";
     };
   };
 }

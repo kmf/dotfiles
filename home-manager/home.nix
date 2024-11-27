@@ -6,7 +6,7 @@
   ];
 
   fonts.fontconfig.enable = true;
-
+  catppuccin.enable = true;
   home = {
     username = "kmf";
     homeDirectory = "/home/kmf";
