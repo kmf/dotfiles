@@ -124,8 +124,8 @@
     kdePackages.akonadi-calendar-tools
     kdePackages.akonadi-calendar
     kdePackages.kdeconnect-kde
+    kdePackages.kscreenlocker
     deepin.deepin-icon-theme
-
 
 
     # Sound
@@ -134,6 +134,10 @@
     pamixer
 
     # Other
+    maestral
+    maestral-gui
+    
+
     home-manager
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum
