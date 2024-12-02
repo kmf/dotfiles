@@ -8,10 +8,4 @@
 
   services.flatpak.enable = true;
 
-  # Steam
-  programs.steam = {
-    enable = true;
-  };
-
-
 }

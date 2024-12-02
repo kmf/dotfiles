@@ -6,17 +6,12 @@
     ./bootloader.nix
     ./catppuccin.nix
     ./cups.nix
-    ./docker.nix
     ./env.nix
     ./iphone.nix
-    ./network.nix
+    ./bilbo-network.nix
     ./nixvim/nixvim.nix
-    ./podman.nix
     ./sound.nix
-    ./steam.nix
     ./user.nix
-    ./virtmanager.nix
-    ./virtualbox.nix
-    ./xserver.nix
+    ./bilbo-xserver.nix
   ];
 }
