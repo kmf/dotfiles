@@ -59,6 +59,7 @@
     ntfs3g
     openssl
     pandoc
+    pciutils
     python312Packages.docker
     ranger
     rclone
@@ -97,6 +98,7 @@
 
     # GNOME 
     gnomeExtensions.pop-shell 
+    gnomeExtensions.appindicator
    
     # Sound
     pipewire
@@ -107,7 +109,47 @@
     maestral
     maestral-gui
     
+    # Hyprland
+    kitty
+    hyprpaper
+    
+    hyprcursor
+    bibata-cursors
+    apple-cursor
+    nwg-look
+    nwg-dock-hyprland
 
+    hyprutils
+    hyprlandPlugins.hyprexpo
+    hyprlandPlugins.hyprspace
+    hyprlandPlugins.hyprbars
+    hyprlandPlugins.hypr-dynamic-cursors
+   
+    hyprwayland-scanner
+    rofi-wayland
+    waybar
+    wl-clipboard
+    hypridle
+    hyprlock
+
+    # waybar 
+    networkmanagerapplet
+    
+    #screenshot 
+    grim
+    slurp
+
+    # hyper osd
+    swayosd
+    # config
+    hyprgui
+    # clipboard
+    cliphist
+
+
+
+
+  
     home-manager
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct

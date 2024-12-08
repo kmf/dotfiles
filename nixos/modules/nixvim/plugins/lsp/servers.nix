@@ -4,6 +4,7 @@
   dockerls.enable = true;
   helm_ls.enable = true;
   html.enable = true;
+  hyprls.enable = true;
   jsonls.enable = true;
   marksman.enable = true;
   nil_ls.enable = true;

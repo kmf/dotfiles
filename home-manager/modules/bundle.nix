@@ -8,6 +8,7 @@
     ./fzf.nix
     ./git.nix
     ./htop.nix
+    ./kitty.nix
     ./lazygit.nix
     ./qt.nix
     ./starship.nix

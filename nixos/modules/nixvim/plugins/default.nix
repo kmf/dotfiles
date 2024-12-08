@@ -16,7 +16,7 @@
     luasnip.enable = true;
     multicursors.enable = true;
     neo-tree = {
-      enable = true;
+      enable = false;
       enableGitStatus = true;
       closeIfLastWindow = true;
       filesystem.filteredItems.hideGitignored = false;

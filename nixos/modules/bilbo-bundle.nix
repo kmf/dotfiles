@@ -8,6 +8,7 @@
     ./cups.nix
     ./env.nix
     ./iphone.nix
+    ./hyprland.nix
     ./bilbo-network.nix
     ./nixvim/nixvim.nix
     ./sound.nix
