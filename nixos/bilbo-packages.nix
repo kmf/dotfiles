@@ -125,7 +125,14 @@
     hyprlandPlugins.hyprexpo
     hyprlandPlugins.hyprspace
     hyprlandPlugins.hyprbars
+    hyprlandPlugins.hyprfocus
+    hyprland-activewindow
+    hyprlandPlugins.hyprtrails
+    hyprlandPlugins.hyprscroller
+    hyprlandPlugins.borders-plus-plus
     hyprlandPlugins.hypr-dynamic-cursors
+    hyprcursor
+    hyprsunset
     
     hyprwayland-scanner
     rofi-wayland
