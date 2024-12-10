@@ -54,9 +54,9 @@
           enable = true;
           settings = {
             theme = "ivy";
+            hijack_netrw = true;
             depth = 1;
             grouped = true;
-            hijack_netwr = true;
             hide_parent_dir = true;
           };
         };
