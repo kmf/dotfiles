@@ -12,6 +12,8 @@
     };
   };
 
+  security.sudo.wheelNeedsPassword = false;
+
   # Enable automatic login for the user.
   # services.getty.autologinUser = "kmf";
 }
