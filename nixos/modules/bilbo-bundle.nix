@@ -12,6 +12,7 @@
     ./bilbo-network.nix
     ./nixvim/nixvim.nix
     ./sound.nix
+    ./steam.nix
     ./user.nix
     ./bilbo-xserver.nix
   ];
