@@ -34,7 +34,9 @@
     ansible-lint
     awscli2
     bat
+    brightnessctl
     btop
+    clipse
     cocogitto
     devenv
     direnv
@@ -114,39 +116,54 @@
     hyprpaper
     
     hyprcursor
-    bibata-cursors
-    apple-cursor
     nwg-look
     nwg-dock-hyprland
+
+    hyprpolkitagent
 
     hyprutils
     hyprlandPlugins.hyprexpo
     hyprlandPlugins.hyprspace
     hyprlandPlugins.hyprbars
     hyprlandPlugins.hypr-dynamic-cursors
-   
+    
     hyprwayland-scanner
     rofi-wayland
     waybar
     wl-clipboard
+    wlogout
     hypridle
     hyprlock
 
     # waybar 
     networkmanagerapplet
     
+    # icons
+    bibata-cursors
+    apple-cursor
+    papirus-icon-theme
+    deepin.deepin-icon-theme
+    pop-icon-theme
+
     #screenshot 
     grim
     slurp
 
     # hyper osd
     swayosd
+    syshud
+    avizo
+
     # config
     hyprgui
     # clipboard
     cliphist
 
-
+   # catppuccin
+    catppuccin
+    catppuccin-gtk
+    catppuccin-cursors
+    magnetic-catppuccin-gtk
 
 
   
