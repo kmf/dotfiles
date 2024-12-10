@@ -54,10 +54,11 @@
           enable = true;
           settings = {
             theme = "ivy";
+            hidden = true;
             hijack_netrw = true;
             depth = 1;
             grouped = true;
-            hide_parent_dir = true;
+            hide_parent_dir = false;
           };
         };
         ui-select = {
