@@ -13,6 +13,7 @@
     aw-qt
     aw-server-rust
     aw-watcher-window
+    dropbox
     flatpak
     google-chrome
     obsidian
@@ -106,6 +107,12 @@
     pipewire
     pulseaudio
     pamixer
+    pwvucontrol
+    pavucontrol
+    helvum
+    
+    # Screenrecorder
+    wayfarer
 
     # Other
     maestral
@@ -137,6 +144,7 @@
     hyprwayland-scanner
     rofi-wayland
     waybar
+    waybar-mpris
     wl-clipboard
     wlogout
     hypridle
