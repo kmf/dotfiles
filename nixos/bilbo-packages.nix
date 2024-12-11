@@ -145,6 +145,7 @@
     rofi-wayland
     waybar
     waybar-mpris
+    playerctl
     wl-clipboard
     wlogout
     hypridle
