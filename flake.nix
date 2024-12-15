@@ -64,6 +64,21 @@
         ];
       };
 
+      nixosConfigurations.rpi4 = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          pkgs = import nixpkgs {
+            inherit system;
+            config.allowUnfree = true;
+          };
+          inherit inputs system;
+        };
+        modules = [
+          ./systems/rpi4/configuration.nix
+          inputs.nixvim.nixosModules.nixvim
+          inputs.catppuccin.nixosModules.catppuccin
+        ];
+      };
+
       homeConfigurations.kmf = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         modules = [
