@@ -24,6 +24,7 @@
     obs-studio
     obsidian
     slack
+    teamviewer
     vscode
     zoom-us
 
