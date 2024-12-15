@@ -16,6 +16,7 @@
     ./samba.nix
     ./sound.nix
     ./steam.nix
+    ./teamviewer.nix
     ./user.nix
     ./virtmanager.nix
     ./virtualbox.nix
