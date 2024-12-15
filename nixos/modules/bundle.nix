@@ -13,6 +13,7 @@
     ./network.nix
     ./nixvim/nixvim.nix
     ./podman.nix
+    ./samba.nix
     ./sound.nix
     ./steam.nix
     ./user.nix
