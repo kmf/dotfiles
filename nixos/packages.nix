@@ -33,6 +33,7 @@
     gnomeExtensions.system-monitor-next
     gnomeExtensions.pop-shell
     gnomeExtensions.appindicator
+    gnome-tweaks
 
     # Coding stuff
     (python312.withPackages (ppkgs: with ppkgs; [
@@ -48,6 +49,7 @@
     awscli2
     bat
     btop
+    clipse
     cocogitto
     devenv
     direnv
@@ -78,6 +80,7 @@
     openshift
     openssl
     pandoc
+    pciutils
     python312Packages.docker
     ranger
     rclone
@@ -128,21 +131,86 @@
     deepin.deepin-icon-theme
 
 
-    # Sound
+   # Sound
     pipewire
     pulseaudio
     pamixer
-
+    pwvucontrol
+    pavucontrol
+    helvum
+    
     # Other
     maestral
     maestral-gui
+    # Hyprland
+    kitty
+    hyprpaper
     
+    hyprcursor
+    nwg-look
+    nwg-dock-hyprland
+
+    hyprpolkitagent
+
+    hyprutils
+    hyprlandPlugins.hyprexpo
+    hyprlandPlugins.hyprspace
+    hyprlandPlugins.hyprbars
+    hyprlandPlugins.hyprfocus
+    hyprland-activewindow
+    hyprlandPlugins.hyprtrails
+    hyprlandPlugins.hyprscroller
+    hyprlandPlugins.borders-plus-plus
+    hyprlandPlugins.hypr-dynamic-cursors
+    hyprcursor
+    hyprsunset
+
+    hyprwayland-scanner
+    rofi-wayland
+    waybar
+    waybar-mpris
+    playerctl
+    wl-clipboard
+    wlogout
+    hypridle
+    hyprlock
+
+    # waybar
+    networkmanagerapplet
+
+    # icons
+    bibata-cursors
+    apple-cursor
+    deepin.deepin-icon-theme
+    pop-icon-theme
+    qogir-icon-theme
+    qogir-theme
+    qogir-kde
+
+    #screenshot
+    grim
+    slurp
+
+    # hyper osd
+    swayosd
+    syshud
+    avizo
+
+    # config
+    hyprgui
+    # clipboard
+    cliphist
+
+   # catppuccin
+    catppuccin
+    catppuccin-gtk
+    catppuccin-cursors
+    magnetic-catppuccin-gtk
 
     home-manager
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
-    papirus-nord
   ];
 
   fonts.packages = with pkgs; [

@@ -8,6 +8,7 @@
     ./cups.nix
     ./docker.nix
     ./env.nix
+    ./hyprland.nix
     ./iphone.nix
     ./network.nix
     ./nixvim/nixvim.nix
