@@ -28,51 +28,53 @@
       ...
     }@inputs:
 
-    let
-      system = "x86_64-linux";
-    in
     {
-
       # nixos - system hostname
-      nixosConfigurations.oakenshield = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.oakenshield = let
+        system = "x86_64-linux";
+      in nixpkgs.lib.nixosSystem {
+        inherit system;
         specialArgs = {
-          pkgs = import nixpkgs {
-            inherit system;
-            config.allowUnfree = true;
-          };
-          inherit inputs system;
+          inherit inputs;
         };
         modules = [
-          ./nixos/configuration.nix
+          ({...}: { nixpkgs.config.allowUnfree = true; })
+          ./systems/oakenshield/configuration.nix
+          inputs.nixvim.nixosModules.nixvim
+          inputs.catppuccin.nixosModules.catppuccin
+          inputs.home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.kmf = import ./home-manager/home.nix;
+          }
+        ];
+      };
+
+      nixosConfigurations.bilbo = let
+        system = "x86_64-linux";
+      in nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = {
+          inherit inputs;
+        };
+        modules = [
+          ({...}: { nixpkgs.config.allowUnfree = true; })
+          ./systems/bilbo/configuration.nix
           inputs.nixvim.nixosModules.nixvim
           inputs.catppuccin.nixosModules.catppuccin
         ];
       };
 
-      nixosConfigurations.bilbo = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.rpi4 = let
+        system = "aarch64-linux";
+      in nixpkgs.lib.nixosSystem {
+        inherit system;
         specialArgs = {
-          pkgs = import nixpkgs {
-            inherit system;
-            config.allowUnfree = true;
-          };
-          inherit inputs system;
+          inherit inputs;
         };
         modules = [
-          ./nixos/bilbo-configuration.nix
-          inputs.nixvim.nixosModules.nixvim
-          inputs.catppuccin.nixosModules.catppuccin
-        ];
-      };
-
-      nixosConfigurations.rpi4 = nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          pkgs = import nixpkgs {
-            inherit system;
-            config.allowUnfree = true;
-          };
-          inherit inputs system;
-        };
-        modules = [
+          ({...}: { nixpkgs.config.allowUnfree = true; })
           ./systems/rpi4/configuration.nix
           inputs.nixvim.nixosModules.nixvim
           inputs.catppuccin.nixosModules.catppuccin
@@ -80,7 +82,7 @@
       };
 
       homeConfigurations.kmf = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
           ./home-manager/home.nix
           inputs.catppuccin.homeManagerModules.catppuccin

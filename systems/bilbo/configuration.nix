@@ -1,8 +1,8 @@
 { ... }: {
   imports = [
-    ./bilbo-hardware-configuration.nix
-    ./bilbo-packages.nix
-    ./modules/bilbo-bundle.nix
+    ./hardware-configuration.nix
+    ./packages.nix
+    ./modules.nix
   ];
 
 #  disabledModules = [
