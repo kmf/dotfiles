@@ -25,6 +25,7 @@
     obsidian
     slack
     teamviewer
+    wpsoffice
     vscode
     zoom-us
 
