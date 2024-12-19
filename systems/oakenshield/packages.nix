@@ -21,6 +21,7 @@
     google-chrome
     gparted
     kdenlive
+    mpv
     obs-studio
     obsidian
     slack
