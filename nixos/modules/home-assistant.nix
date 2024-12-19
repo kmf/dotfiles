@@ -1,4 +1,4 @@
-{
+{ pkgs, }:{
   services.home-assistant = {
     enable = true;
         openFirewall = true;
@@ -36,5 +36,8 @@
       homeassistant.temperature_unit = "C";
       homeassistant.name = "rpi4";
     };
+    customComponents = [
+      (pkgs.callPackage ./ha-solarman.nix {})
+    ];
   };
 }
