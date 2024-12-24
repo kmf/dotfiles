@@ -10,6 +10,7 @@
     ../../nixos/modules/env.nix
     # ../../nixos/modules/hyprland.nix
     ../../nixos/modules/iphone.nix
+    ../../nixos/modules/kde.nix
     ../../nixos/modules/network.nix
     ../../nixos/modules/nixvim/nixvim.nix
     ../../nixos/modules/podman.nix
@@ -20,6 +21,6 @@
     ../../nixos/modules/user.nix
     ../../nixos/modules/virtmanager.nix
     ../../nixos/modules/virtualbox.nix
-    ../../nixos/modules/xserver.nix
+    # ../../nixos/modules/xserver.nix
   ];
 }
