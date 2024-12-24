@@ -199,8 +199,6 @@
     swayosd
     syshud
     avizo
-    dunst
-    libnotify
 
     xdg-desktop-portal-gtk
 
