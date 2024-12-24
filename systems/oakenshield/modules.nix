@@ -8,7 +8,7 @@
     ../../nixos/modules/cups.nix
     ../../nixos/modules/docker.nix
     ../../nixos/modules/env.nix
-    ../../nixos/modules/hyprland.nix
+    # ../../nixos/modules/hyprland.nix
     ../../nixos/modules/iphone.nix
     ../../nixos/modules/network.nix
     ../../nixos/modules/nixvim/nixvim.nix
