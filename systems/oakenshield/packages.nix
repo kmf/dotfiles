@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, pkgs-unstable, ... }: {
   nixpkgs.config = {
     allowUnfree = true;
     # permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
@@ -6,19 +6,20 @@
 
   environment.systemPackages = with pkgs; [
     # Desktop apps
-    activitywatch
+    pkgs-unstable.vscode
+    google-chrome
     adoptopenjdk-icedtea-web
     alacritty
-    aw-notify
-    aw-qt
-    aw-server-rust
-    aw-watcher-window
+    # activitywatch
+    # aw-notify
+    # aw-qt
+    # aw-server-rust
+    # aw-watcher-window
     discord
     distrobox
     drawio
     dropbox
     flatpak
-    google-chrome
     gparted
     kdenlive
     mpv
@@ -27,16 +28,15 @@
     slack
     teamviewer
     wpsoffice
-    vscode
     zoom-us
 
 
 
     # GNOME
-    gnomeExtensions.system-monitor-next
-    gnomeExtensions.pop-shell
-    gnomeExtensions.appindicator
     gnome-tweaks
+    gnomeExtensions.appindicator
+    gnomeExtensions.pop-shell
+    gnomeExtensions.system-monitor-next
 
     # Coding stuff
     (python312.withPackages (ppkgs: with ppkgs; [
@@ -170,8 +170,6 @@
 
     hyprwayland-scanner
     rofi-wayland
-    waybar
-    waybar-mpris
     playerctl
     wl-clipboard
     wlogout
@@ -179,6 +177,9 @@
     hyprlock
 
     # waybar
+    waybar
+    waybar-mpris
+
     networkmanagerapplet
 
     # icons
@@ -198,6 +199,11 @@
     swayosd
     syshud
     avizo
+    dunst
+    libnotify
+
+    xdg-desktop-portal-gtk
+
 
     # config
     hyprgui

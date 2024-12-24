@@ -9,10 +9,10 @@
     activitywatch
     adoptopenjdk-icedtea-web
     alacritty
-    aw-notify
-    aw-qt
-    aw-server-rust
-    aw-watcher-window
+    # aw-notify
+    # aw-qt
+    # aw-server-rust
+    # aw-watcher-window
     dropbox
     flatpak
     google-chrome
