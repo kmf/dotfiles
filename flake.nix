@@ -2,19 +2,15 @@
   description = "My system configuration";
 
   inputs = {
-
-    # nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     catppuccin.url = "github:catppuccin/nix";
-
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     nixvim = {
-      url = "github:nix-community/nixvim";
+      url = "github:nix-community/nixvim/nixos-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -32,9 +28,11 @@
       # nixos - system hostname
       nixosConfigurations.oakenshield = let
         system = "x86_64-linux";
+        pkgs-unstable = import nixpkgs-unstable { system = "x86_64-linux"; config = { allowUnfree = true;}; };
       in nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {
+          inherit pkgs-unstable;
           inherit inputs;
         };
         modules = [
