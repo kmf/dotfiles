@@ -13,6 +13,9 @@
       url = "github:nix-community/nixvim/nixos-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ghostty = {
+      url = "github:ghostty-org/ghostty";
+    };
   };
 
   outputs =
@@ -20,6 +23,7 @@
       self,
       nixpkgs,
       nixpkgs-unstable,
+      ghostty,
       home-manager,
       ...
     }@inputs:
