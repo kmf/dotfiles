@@ -1,4 +1,4 @@
-{ pkgs, pkgs-unstable, ... }: {
+{ pkgs, pkgs-unstable, inputs, ... }: {
   nixpkgs.config = {
     allowUnfree = true;
     # permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
@@ -130,7 +130,6 @@
     kdePackages.akonadi-calendar-tools
     kdePackages.akonadi-calendar
     kdePackages.kdeconnect-kde
-    kdePackages.kscreenlocker
     deepin.deepin-icon-theme
 
 
@@ -141,44 +140,41 @@
     pwvucontrol
     pavucontrol
     helvum
-    
+
     # Other
     maestral
     maestral-gui
-    # Hyprland
-    kitty
-    hyprpaper
-    
-    hyprcursor
-    nwg-look
-    nwg-dock-hyprland
 
-    hyprpolkitagent
-
-    hyprutils
-    hyprlandPlugins.hyprexpo
-    hyprlandPlugins.hyprspace
-    hyprlandPlugins.hyprbars
-    hyprlandPlugins.hyprfocus
-    hyprland-activewindow
-    hyprlandPlugins.hyprtrails
-    hyprlandPlugins.hyprscroller
-    hyprlandPlugins.borders-plus-plus
-    hyprlandPlugins.hypr-dynamic-cursors
-    hyprcursor
-    hyprsunset
-
-    hyprwayland-scanner
-    rofi-wayland
-    playerctl
-    wl-clipboard
-    wlogout
-    hypridle
-    hyprlock
+    ## Hyprland
+    # kitty
+    # hyprpaper
+    # hyprcursor
+    # nwg-look
+    # nwg-dock-hyprland
+    # hyprpolkitagent
+    # hyprutils
+    # hyprlandPlugins.hyprexpo
+    # hyprlandPlugins.hyprspace
+    # hyprlandPlugins.hyprbars
+    # hyprlandPlugins.hyprfocus
+    # hyprland-activewindow
+    # hyprlandPlugins.hyprtrails
+    # hyprlandPlugins.hyprscroller
+    # hyprlandPlugins.borders-plus-plus
+    # hyprlandPlugins.hypr-dynamic-cursors
+    # hyprcursor
+    # hyprsunset
+    # hyprwayland-scanner
+    # rofi-wayland
+    # playerctl
+    # wl-clipboard
+    # wlogout
+    # hypridle
+    # hyprlock
 
     # waybar
-    waybar
-    waybar-mpris
+    # waybar
+    # waybar-mpris
 
     networkmanagerapplet
 
@@ -192,21 +188,21 @@
     qogir-kde
 
     #screenshot
-    grim
-    slurp
+    # grim
+    # slurp
 
     # hyper osd
-    swayosd
-    syshud
-    avizo
+    # swayosd
+    # syshud
+    # avizo
 
     xdg-desktop-portal-gtk
 
 
-    # config
-    hyprgui
-    # clipboard
-    cliphist
+    ## config
+    #hyprgui
+    ## clipboard
+    #cliphist
 
    # catppuccin
     catppuccin
@@ -218,6 +214,9 @@
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
+
+    # ghostty
+    inputs.ghostty.packages.${pkgs.system}.default
   ];
 
   fonts.packages = with pkgs; [
