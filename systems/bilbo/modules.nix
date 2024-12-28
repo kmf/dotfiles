@@ -8,7 +8,7 @@
     ../../nixos/modules/cups.nix
     ../../nixos/modules/env.nix
     ../../nixos/modules/gnome.nix
-    ../../nixos/modules/hyprland.nix
+    ../../nixos/modules/bilbo-hyprland.nix
     ../../nixos/modules/iphone.nix
     ../../nixos/modules/nixvim/nixvim.nix
     ../../nixos/modules/sound.nix
