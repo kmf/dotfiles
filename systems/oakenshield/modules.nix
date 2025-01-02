@@ -17,6 +17,7 @@
     ../../nixos/modules/samba.nix
     ../../nixos/modules/sound.nix
     ../../nixos/modules/steam.nix
+    ../../nixos/modules/tailscale.nix
     ../../nixos/modules/teamviewer.nix
     ../../nixos/modules/user.nix
     ../../nixos/modules/virtmanager.nix
