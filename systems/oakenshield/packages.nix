@@ -30,7 +30,8 @@
     wpsoffice
     zoom-us
 
-
+#   Office
+    libreoffice-qt6-fresh
 
     # GNOME
     gnome-tweaks
@@ -79,6 +80,7 @@
     nixfmt-rfc-style
     nixos-generators
     ntfs3g
+    nvtopPackages.full
     ollama
     openshift
     openssl
@@ -96,6 +98,7 @@
     tree
     unzip
     wget
+    whatfiles
     yazi
     yt-dlp
     zip
@@ -129,8 +132,22 @@
     kdePackages.calendarsupport
     kdePackages.akonadi-calendar-tools
     kdePackages.akonadi-calendar
+    kdePackages.kdepim-addons
     kdePackages.kdeconnect-kde
     deepin.deepin-icon-theme
+    kdePackages.kzones
+    kdePackages.krohnkite
+    kdePackages.karousel
+    kdePackages.kdeconnect-kde
+    kdePackages.kompare
+    kdePackages.kio-zeroconf
+    kdePackages.kdenetwork-filesharing
+    krusader
+    krename
+    kdiff3
+
+    # Theme
+    nordic
 
 
    # Sound
