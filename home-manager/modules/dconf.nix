@@ -4,8 +4,8 @@ dconf.settings = {
     close = ["<Super>q" "<Alt>F4"];
     minimize = ["<Super><Ctrl>Down"];
     toggle-maximized = ["<Super>m"];
-    move-to-monitor-left = [];
-    move-to-monitor-right = [];
+    move-to-monitor-left = ["<Ctrl><Super>Left"];
+    move-to-monitor-right = ["<Ctrl><Super>Right"];
     move-to-monitor-up = [];
     move-to-monitor-down = [];
     move-to-workspace-down = [];
@@ -29,8 +29,8 @@ dconf.settings = {
   };
 
   "org/gnome/mutter/keybindings" = {
-    toggle-tiled-left = ["<Ctrl><Super>Left"];
-    toggle-tiled-right = ["<Ctrl><Super>Right"];
+    toggle-tiled-left = ["<Super>Left"];
+    toggle-tiled-right = ["<Super>Right"];
   };
 
   "org/gnome/mutter/wayland/keybindings" = {
@@ -49,8 +49,8 @@ dconf.settings = {
         ];
   };
   "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-        name = "Terminal";
-        command = "kgx";
+        name = "ghostty";
+        command = "ghostty";
         binding = "<Super>t";
   };
 
