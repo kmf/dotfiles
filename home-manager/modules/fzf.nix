@@ -1,8 +1,9 @@
-{
+{ pkgs, ... }: {
     programs.fzf = {
     enable = true;
     enableZshIntegration = true;
-    defaultCommand = "fd --type f --hidden --follow --exclude .git";
-    fileWidgetCommand = "fd --type f --hidden --follow --exclude .git";
+    fileWidgetOptions = [
+      "--preview '${pkgs.bat}/bin/bat --color=always --style=numbers --line-range :500 {}'"
+    ];
   };
 }
