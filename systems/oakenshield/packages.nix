@@ -7,14 +7,15 @@
   environment.systemPackages = with pkgs; [
     # Desktop apps
     pkgs-unstable.vscode
+    pkgs-unstable.zed-editor
     google-chrome
     adoptopenjdk-icedtea-web
     alacritty
-    # activitywatch
+    activitywatch
     # aw-notify
-    # aw-qt
-    # aw-server-rust
-    # aw-watcher-window
+    aw-qt
+    aw-server-rust
+    aw-watcher-window
     discord
     distrobox
     drawio
@@ -34,6 +35,7 @@
     libreoffice-qt6-fresh
 
     # GNOME
+    gnome-software
     gnome-tweaks
     gnomeExtensions.appindicator
     gnomeExtensions.pop-shell
@@ -66,6 +68,7 @@
     git
     go
     htop
+    iproute2
     jdk8
     k9s
     kubectl
@@ -97,6 +100,7 @@
     syncthing
     tree
     unzip
+    vnstat
     wget
     whatfiles
     yazi
@@ -194,6 +198,7 @@
     # waybar-mpris
 
     networkmanagerapplet
+    libgtop
 
     # icons
     bibata-cursors
@@ -212,8 +217,10 @@
     # swayosd
     # syshud
     # avizo
-
+    
+    # Cinnamon
     xdg-desktop-portal-gtk
+    gnome-online-accounts-gtk
 
 
     ## config
