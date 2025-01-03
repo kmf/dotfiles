@@ -14,7 +14,7 @@
     ./qt.nix
     ./starship.nix
     ./syncthing.nix
-    ./zed-editor.nix
+#    ./zed-editor.nix
     ./zoxide.nix
   ];
 }
