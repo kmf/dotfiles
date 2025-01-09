@@ -64,9 +64,11 @@
     fastfetch
     file
     fm
+    fm-go
     fzf
     git
     go
+    gum
     htop
     iproute2
     jdk8
@@ -108,6 +110,8 @@
     zip
     zsh
 
+  # Browsers
+    firefox
   # Networking
     networkmanager-openvpn
     networkmanager-openconnect
@@ -219,8 +223,11 @@
     # avizo
     
     # Cinnamon
-    xdg-desktop-portal-gtk
-    gnome-online-accounts-gtk
+    nemo-with-extensions
+    folder-color-switcher
+    nemo-fileroller
+    nemo-emblems
+    nemo-python
 
 
     ## config
@@ -239,8 +246,15 @@
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
 
+  # Emu
+    dolphin-emu
+
     # ghostty
     inputs.ghostty.packages.${pkgs.system}.default
+
+    # flox
+    inputs.flox.packages.${pkgs.system}.default
+
   ];
 
   fonts.packages = with pkgs; [

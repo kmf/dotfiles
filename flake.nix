@@ -16,6 +16,9 @@
     ghostty = {
       url = "github:ghostty-org/ghostty";
     };
+    flox = {
+      url = "github:flox/flox/v1.3.9";
+    };
   };
 
   outputs =
@@ -24,6 +27,7 @@
       nixpkgs,
       nixpkgs-unstable,
       ghostty,
+      flox,
       home-manager,
       ...
     }@inputs:
