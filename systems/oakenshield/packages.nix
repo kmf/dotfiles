@@ -8,7 +8,7 @@
     # Desktop apps
     pkgs-unstable.vscode
     pkgs-unstable.zed-editor
-    google-chrome
+    pkgs-unstable.google-chrome
     adoptopenjdk-icedtea-web
     alacritty
     activitywatch
@@ -28,6 +28,7 @@
     obsidian
     slack
     teamviewer
+    vivaldi
     wpsoffice
     zoom-us
 
@@ -76,6 +77,7 @@
     kubectl
     lazydocker
     lazygit
+    libva-utils
     mc
     neofetch
     nh
@@ -105,6 +107,7 @@
     vnstat
     wget
     whatfiles
+    usbutils
     yazi
     yt-dlp
     zip
@@ -135,24 +138,24 @@
   # pantheon-tweaks
 
   # KDE
-    kdePackages.merkuro
-    kdePackages.qtlocation
-    kdePackages.calendarsupport
-    kdePackages.akonadi-calendar-tools
-    kdePackages.akonadi-calendar
-    kdePackages.kdepim-addons
-    kdePackages.kdeconnect-kde
-    deepin.deepin-icon-theme
-    kdePackages.kzones
-    kdePackages.krohnkite
-    kdePackages.karousel
-    kdePackages.kdeconnect-kde
-    kdePackages.kompare
-    kdePackages.kio-zeroconf
-    kdePackages.kdenetwork-filesharing
-    krusader
-    krename
-    kdiff3
+  # kdePackages.merkuro
+  # kdePackages.qtlocation
+  # kdePackages.calendarsupport
+  # kdePackages.akonadi-calendar-tools
+  # kdePackages.akonadi-calendar
+  # kdePackages.kdepim-addons
+  # kdePackages.kdeconnect-kde
+  # deepin.deepin-icon-theme
+  # kdePackages.kzones
+  # kdePackages.krohnkite
+  # kdePackages.karousel
+  # kdePackages.kdeconnect-kde
+  # kdePackages.kompare
+  # kdePackages.kio-zeroconf
+  # kdePackages.kdenetwork-filesharing
+  # krusader
+  # krename
+  # kdiff3
 
     # Theme
     nordic
